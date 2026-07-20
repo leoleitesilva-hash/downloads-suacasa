@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de Iluminação: sua casa aconchegante em um fim de semana</title>
+<meta name="description" content="A culpa é da luz. Aprenda a temperatura certa, spots, fitas LED e camadas de luz de cada ambiente. Guia visual por R$ 39, sem obra e sem arquiteto.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Sua casa fria e sem aconchego? A culpa é da luz.">
+<meta property="og:description" content="Transforme todos os ambientes em um fim de semana com o Guia de Iluminação. Sem obra, sem arquiteto, por R$ 39.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 8 a30 30 0 0 1 14 56 v10 h-28 v-10 A30 30 0 0 1 50 8z' fill='%23f5b32e'/%3E%3Crect x='40' y='78' width='20' height='6' rx='3' fill='%238b9cb3'/%3E%3Crect x='42' y='88' width='16' height='5' rx='2.5' fill='%238b9cb3'/%3E%3C/svg%3E">
+
+<link rel="preload" as="image" href="assets/img/capa-440.webp" media="(max-width: 640px)">
+<link rel="preload" as="image" href="assets/img/capa-720.webp" media="(min-width: 641px)">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Guia de Iluminação",
+  "description": "Guia visual de iluminação residencial. Temperatura de cor, luz direta e indireta, fitas LED, camadas de luz e projeto completo, ambiente por ambiente.",
+  "offers": {
+    "@type": "Offer",
+    "price": "39.00",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Leo Leite Silva",
+    "jobTitle": "Engenheiro Eletricista e Técnico em Eletrônica"
+  }
+}
+</script>
+
+<style>
+/* Cores do nicho iluminação e aconchego. Azul profundo de noite (mesma
+   família da capa) como fundo, âmbar quente como a própria luz acesa da
+   promessa, ciano da capa nos detalhes técnicos. O âmbar do CTA é
+   exclusivo do botão, contraste máximo contra o azul. */
+:root{
+  --night-900:#0a1322;
+  --night-800:#0f1d33;
+  --night-700:#173052;
+  --amber:#f5b32e;
+  --amber-dark:#d99010;
+  --glow:#ffd97a;
+  --cyan:#4cc3f7;
+  --green:#2fbf71;
+  --white:#fff;
+  --gray-100:#eaeef5;
+  --gray-300:#b9c4d6;
+  --gray-500:#7f8da3;
+  --radius:14px;
+  --maxw:1060px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+  background:var(--night-900);color:var(--gray-100);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+h1,h2,h3{line-height:1.2;font-weight:800}
+h2{font-size:clamp(1.55rem,4vw,2.3rem);text-align:center;margin-bottom:14px;color:var(--white)}
+.section-sub{text-align:center;color:var(--gray-300);max-width:640px;margin:0 auto 40px;font-size:1.05rem}
+.hl{color:var(--amber)}
+.hl-cyan{color:var(--cyan)}
+
+.topbar{background:linear-gradient(90deg,var(--amber-dark),var(--amber));color:#241a05;text-align:center;
+  font-weight:700;font-size:.92rem;padding:9px 14px}
+
+/* HERO com brilho quente, como luz acesa no ambiente */
+.hero{background:
+  radial-gradient(ellipse 65% 55% at 78% 20%,rgba(245,179,46,.16),transparent 60%),
+  radial-gradient(ellipse 50% 40% at 12% 90%,rgba(76,195,247,.07),transparent 60%),
+  linear-gradient(180deg,var(--night-800),var(--night-900));
+  padding:54px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.badge{display:inline-flex;gap:8px;background:rgba(76,195,247,.1);border:1px solid rgba(76,195,247,.4);
+  color:var(--cyan);font-weight:700;font-size:.85rem;padding:7px 16px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(1.75rem,4.2vw,2.7rem);color:var(--white);margin-bottom:16px}
+.subheadline{font-size:clamp(1.02rem,2.2vw,1.18rem);color:var(--gray-300);margin-bottom:28px;max-width:580px}
+.subheadline strong{color:var(--white)}
+
+.cta-btn{display:inline-block;background:linear-gradient(180deg,var(--amber),var(--amber-dark));
+  color:#241a05;text-decoration:none;font-weight:800;font-size:clamp(1rem,2vw,1.14rem);
+  padding:18px 36px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(245,179,46,.35);
+  transition:transform .15s,box-shadow .15s;text-align:center}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(245,179,46,.5)}
+.cta-note{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:.87rem;color:var(--gray-500)}
+.cta-note b{color:var(--green)}
+
+.capa-wrap{position:relative;max-width:360px;margin:0 auto}
+.capa-wrap img{border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 60px rgba(245,179,46,.12)}
+.capa-wrap .tag{position:absolute;top:12px;right:-10px;background:var(--amber);color:#241a05;
+  font-weight:800;font-size:.78rem;padding:7px 12px;border-radius:8px;transform:rotate(4deg);
+  box-shadow:0 5px 14px rgba(0,0,0,.4)}
+
+/* DORES */
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pain-card{background:var(--night-800);border:1px solid rgba(127,141,163,.16);border-radius:var(--radius);padding:26px 22px}
+.pain-card .ico{font-size:1.9rem;margin-bottom:10px}
+.pain-card h3{font-size:1.05rem;color:var(--white);margin-bottom:8px}
+.pain-card p{color:var(--gray-300);font-size:.94rem}
+
+/* A CONTA */
+.conta-box{max-width:760px;margin:40px auto 0;background:var(--night-700);border:2px solid var(--amber);
+  border-radius:var(--radius);padding:26px 28px;text-align:center}
+.conta-box h3{color:var(--amber);font-size:1.1rem;margin-bottom:10px}
+.conta-box p{color:var(--gray-100);font-size:1rem}
+.conta-box b{color:var(--white)}
+.conta-nota{margin-top:10px;font-size:.8rem;color:var(--gray-500)}
+
+/* CAPÍTULOS */
+.caps{background:linear-gradient(180deg,var(--night-800),var(--night-900))}
+.mod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:880px;margin:0 auto}
+.mod{display:flex;gap:14px;background:var(--night-700);border-radius:var(--radius);padding:18px 20px}
+.mod .num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--cyan);color:var(--night-900);
+  font-weight:800;display:flex;align-items:center;justify-content:center}
+.mod p{font-size:.95rem;color:var(--gray-300)}
+.mod p b{color:var(--white)}
+
+/* BENEFÍCIOS */
+.bene-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;max-width:840px;margin:0 auto}
+.bene-item{display:flex;gap:12px;align-items:flex-start;background:var(--night-800);border-radius:var(--radius);
+  padding:16px 18px;border:1px solid rgba(127,141,163,.14)}
+.bene-item .check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:rgba(47,191,113,.15);
+  color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem}
+.bene-item p{font-size:.95rem;color:var(--gray-300)}
+.bene-item p b{color:var(--white)}
+
+/* AUTOR */
+.autor{background:linear-gradient(180deg,var(--night-800),var(--night-900))}
+.autor-box{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;max-width:840px;margin:0 auto;
+  background:var(--night-700);border-radius:18px;padding:34px;border:1px solid rgba(245,179,46,.3)}
+.autor-box img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--amber)}
+.autor-box h3{color:var(--white);font-size:1.3rem;margin-bottom:4px}
+.autor-box .cred{color:var(--amber);font-weight:700;font-size:.92rem;margin-bottom:10px}
+.autor-box p{color:var(--gray-300);font-size:.96rem}
+
+/* PROVA SOCIAL oculta até existirem depoimentos reais */
+.depoimentos{display:none}
+
+/* PREÇO */
+.preco-box{max-width:520px;margin:0 auto;background:var(--night-700);border-radius:20px;padding:38px 32px;
+  text-align:center;border:2px solid var(--amber);box-shadow:0 16px 44px rgba(0,0,0,.45)}
+.preco-box ul{list-style:none;text-align:left;margin:0 0 22px}
+.preco-box li{padding:9px 0;font-size:.95rem;border-bottom:1px dashed rgba(185,196,214,.15);color:var(--gray-300)}
+.preco-box li b{color:var(--white)}
+.anchor{font-size:.98rem;color:var(--gray-300)}
+.preco-num{font-size:2.6rem;font-weight:800;color:var(--amber);margin:6px 0 2px}
+.preco-sub{font-size:.95rem;color:var(--gray-500);margin-bottom:20px}
+.garantia{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:12px 20px;border-radius:99px;
+  background:rgba(47,191,113,.08);border:1px solid rgba(47,191,113,.35);color:var(--green);font-weight:700;font-size:.9rem}
+
+/* FAQ */
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{background:var(--night-800);border:1px solid rgba(127,141,163,.16);border-radius:var(--radius);
+  margin-bottom:12px;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:17px 20px;font-weight:700;color:var(--white);list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--amber);font-size:1.35rem;font-weight:800;transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{padding:0 20px 17px;color:var(--gray-300);font-size:.94rem}
+
+/* CTA FINAL */
+.cta-final{background:
+  radial-gradient(ellipse 70% 80% at 50% 0%,rgba(245,179,46,.13),transparent 60%),
+  linear-gradient(180deg,var(--night-800),var(--night-900));
+  text-align:center;padding:76px 0}
+.cta-final h2{color:var(--white)}
+.cta-final .section-sub{margin-bottom:30px}
+
+footer{padding:26px 20px;text-align:center;color:var(--gray-500);font-size:.84rem;
+  border-top:1px solid rgba(127,141,163,.15)}
+
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(10,19,34,.94);backdrop-filter:blur(8px);border-top:1px solid rgba(245,179,46,.35);
+  display:none;transform:translateY(110%);transition:transform .3s}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .cta-btn{display:block;width:100%;padding:14px 18px;font-size:.98rem}
+
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .pain-grid{grid-template-columns:1fr}
+  .mod-grid,.bene-grid{grid-template-columns:1fr}
+  .autor-box{grid-template-columns:1fr;text-align:center}
+  .autor-box img{margin:0 auto}
+  .sticky-cta{display:block}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">Oferta de lançamento. O guia completo por R$ 39, menos que uma luminária.</div>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">💡 GUIA VISUAL DE ILUMINAÇÃO RESIDENCIAL</span>
+      <h1>Sua casa parece fria e sem aconchego? <span class="hl">A culpa é da luz.</span> Transforme todos os ambientes em um fim de semana</h1>
+      <p class="subheadline">
+        Chega de errar entre <strong>luz amarela e branca</strong>. O guia mostra a temperatura
+        certa, os spots, as fitas LED e as camadas de luz de cada cômodo, num passo a passo
+        visual feito <strong>para quem não é especialista</strong>. Sem obra e sem pagar arquiteto.
+      </p>
+      <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DO CHECKOUT -->
+        QUERO MINHA CASA ACONCHEGANTE
+      </a>
+      <div class="cta-note">
+        <span><b>✓</b> Acesso imediato</span>
+        <span><b>✓</b> Garantia de 7 dias</span>
+        <span><b>✓</b> Leia no celular</span>
+      </div>
+    </div>
+    <div class="capa-wrap">
+      <span class="tag">8 CAPÍTULOS VISUAIS</span>
+      <img
+        src="assets/img/capa-720.webp"
+        srcset="assets/img/capa-440.webp 440w, assets/img/capa-720.webp 720w"
+        sizes="(max-width: 640px) 85vw, 360px"
+        width="720" height="1018"
+        alt="Capa do Guia de Iluminação, com sala aconchegante iluminada por luz quente indireta"
+        fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</header>
+
+<!-- DORES -->
+<section>
+  <div class="container">
+    <h2 class="reveal">Você já passou por isso?</h2>
+    <p class="section-sub reveal">São os três erros que mais aparecem em quem tenta acertar a luz sozinho.</p>
+    <div class="pain-grid">
+      <div class="pain-card reveal"><div class="ico">💡</div><h3>Comprou a lâmpada errada</h3><p>Levou a branca, o quarto virou hospital. Trocou pela amarela, a cozinha ficou escura. E lá se vai mais uma viagem à loja.</p></div>
+      <div class="pain-card reveal"><div class="ico">🕳️</div><h3>Gastou com gesso e spots</h3><p>Encheu o teto de spot e a sala ficou com cara de loja, não de lar. Iluminada, mas sem nenhum aconchego.</p></div>
+      <div class="pain-card reveal"><div class="ico">📱</div><h3>Tentou copiar a casa de revista</h3><p>Salvou mil fotos de sanca e fita LED. Na hora de fazer, não sabia nem que fita comprar. O sonho ficou no print.</p></div>
+    </div>
+    <div class="conta-box reveal">
+      <h3>Quanto custa acertar a luz? Faça a conta</h3>
+      <p>Um projeto de iluminação profissional custa de <b>R$ 600 a R$ 1.500 por ambiente</b>.
+      O guia resolve a casa inteira por <b class="hl">R$ 39</b>. Menos que uma luminária.</p>
+      <p class="conta-nota">Valores médios de projeto luminotécnico residencial no Brasil.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CAPÍTULOS -->
+<section class="caps">
+  <div class="container">
+    <h2 class="reveal">O que tem dentro do guia</h2>
+    <p class="section-sub reveal">8 capítulos visuais, com fotos, tabelas por ambiente e checklists de compra.</p>
+    <div class="mod-grid">
+      <div class="mod reveal"><div class="num">1</div><p><b>Temperatura de cor.</b> A resposta definitiva da luz amarela ou branca, ambiente por ambiente.</p></div>
+      <div class="mod reveal"><div class="num">2</div><p><b>Luz direta, indireta e spots.</b> Onde cada uma funciona e como escolher o spot certo.</p></div>
+      <div class="mod reveal"><div class="num">3</div><p><b>Camadas de luz e dimerização.</b> Cenas prontas para receber, ver filme, ler e relaxar.</p></div>
+      <div class="mod reveal"><div class="num">4</div><p><b>Dimmer, branco ajustável e LED programável.</b> O controle que transforma o mesmo ambiente.</p></div>
+      <div class="mod reveal"><div class="num">5</div><p><b>Fitas LED sem cafonice.</b> Qual fita comprar, onde usar e o que conferir na embalagem.</p></div>
+      <div class="mod reveal"><div class="num">6</div><p><b>12 V, 24 V e proteção IP.</b> Para varanda, jardim e área externa durarem sem manutenção.</p></div>
+      <div class="mod reveal"><div class="num">7</div><p><b>Como dimensionar a fonte.</b> A conta simples que evita fita fraca e fonte queimada.</p></div>
+      <div class="mod reveal"><div class="num">8</div><p><b>Seu projeto de luz.</b> Os 8 erros que estragam a iluminação e o checklist da casa inteira.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section>
+  <div class="container">
+    <h2 class="reveal">Como sua casa fica depois do guia</h2>
+    <p class="section-sub reveal">O mesmo imóvel, outra sensação.</p>
+    <div class="bene-grid">
+      <div class="bene-item reveal"><div class="check">✓</div><p>Sala com <b>clima de abraço</b> para receber, e luz certa para ver filme sem reflexo na TV.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p>Quarto que <b>desliga seu corpo</b> à noite, com a temperatura de cor que ajuda o sono.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p>Cozinha e banheiro com <b>luz que funciona</b>, sem sombra na bancada nem susto no espelho.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Nunca mais comprar lâmpada errada.</b> Você bate o olho na embalagem e sabe o que levar.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p>Fita LED instalada <b>com acabamento de projeto</b>, sem pontos aparentes e sem queimar fonte.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p>Tudo <b>sem quebrar parede</b>. O guia usa os pontos de luz que sua casa já tem.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOR -->
+<section class="autor">
+  <div class="container">
+    <div class="autor-box reveal">
+      <img src="assets/img/autor.webp" width="480" height="480" alt="Foto de Leo Leite Silva, autor do Guia de Iluminação" loading="lazy" decoding="async">
+      <div>
+        <h3>Quem escreveu o guia</h3>
+        <p class="cred">Leo Leite Silva · Engenheiro Eletricista · Técnico em Eletrônica · 20+ anos de experiência</p>
+        <p>
+          São mais de vinte anos trabalhando com elétrica e eletrônica na prática.
+          O guia faz parte do projeto Sua Casa no Automático e entrega o que eu
+          aprendi em duas décadas de obra e bancada, traduzido para quem só quer
+          uma casa gostosa de viver.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL: preencher com depoimentos reais e reativar
+<section class="depoimentos">
+  <div class="container">
+    <h2>Quem já aplicou o guia</h2>
+    [depoimento real + nome + cidade]
+  </div>
+</section>
+-->
+
+<!-- PREÇO -->
+<section id="oferta">
+  <div class="container">
+    <h2 class="reveal">Tudo isso por menos que uma luminária</h2>
+    <div class="preco-box reveal" style="margin-top:30px">
+      <ul>
+        <li><b>Guia de Iluminação completo</b> com os 8 capítulos visuais</li>
+        <li><b>Tabelas por ambiente</b> de temperatura de cor e camadas de luz</li>
+        <li><b>Checklists de compra</b> de lâmpada, fita LED e fonte</li>
+        <li><b>Cenas prontas</b> para receber, filme, leitura e noite</li>
+      </ul>
+      <p class="anchor">Projeto profissional custa a partir de R$ 600 por ambiente. O guia sai por</p>
+      <p class="preco-num">R$ 39</p>
+      <p class="preco-sub">pagamento único, acesso imediato, leia no celular ou imprima</p>
+      <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DO CHECKOUT -->QUERO O GUIA POR R$ 39</a>
+      <div><span class="garantia">🛡️ Garantia de 7 dias. Não gostou, devolvo tudo. O risco é meu.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <h2 class="reveal">Perguntas frequentes</h2>
+    <div class="faq-list reveal">
+      <details class="faq-item"><summary>Moro de aluguel. O guia serve para mim?</summary><p>Serve, e muito. Boa parte das técnicas usa abajur, fita LED, pendente e troca de lâmpada, tudo sem obra e sem mexer na estrutura. Você leva o aconchego com você na mudança.</p></details>
+      <details class="faq-item"><summary>Preciso chamar eletricista?</summary><p>Para trocar lâmpada e instalar fita com fonte, não. O guia mostra o passo seguro. Onde envolve fiação da casa, ele avisa e mostra o que pedir ao eletricista, para você não pagar serviço errado.</p></details>
+      <details class="faq-item"><summary>Não entendo nada de Kelvin, watts, IP. Vou conseguir?</summary><p>O guia foi feito exatamente para você. Cada conceito vem com foto, tabela simples e a indicação por ambiente. Você não precisa virar especialista, só seguir o que está pronto.</p></details>
+      <details class="faq-item"><summary>Como eu recebo o guia?</summary><p>Acesso imediato após o pagamento. Chega no seu e-mail em PDF de alta qualidade, para ler no celular, no computador ou imprimir.</p></details>
+      <details class="faq-item"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Pede o reembolso e devolvo 100% do valor, sem perguntas. O risco é todo meu, é só clicar no botão e testar.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2 class="reveal">Sua sala pode estar aconchegante<br>já no próximo fim de semana</h2>
+    <p class="section-sub reveal">
+      Ou você pode continuar acendendo aquela luz branca fria e sentindo que falta
+      alguma coisa. A diferença entre os dois cenários custa R$ 39 e cabe num fim de semana.
+    </p>
+    <a class="cta-btn reveal" href="#"><!-- TROCAR PELO LINK DO CHECKOUT -->QUERO TRANSFORMAR MINHA CASA</a>
+    <div style="margin-top:20px"><span class="garantia">🛡️ Compra segura · Acesso imediato · Garantia de 7 dias</span></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Leo Leite Silva. Todos os direitos reservados.</p>
+  <p>Guia de Iluminação · Sua Casa no Automático (página desenvolvida com Claude)</p>
+</footer>
+
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DO CHECKOUT -->QUERO O GUIA POR R$ 39</a>
+</div>
+
+<script>
+(function(){
+  document.body.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  var hero=document.querySelector('.hero'),s=document.getElementById('stickyCta');
+  var io2=new IntersectionObserver(function(es){var out=!es[0].isIntersecting;s.classList.toggle('show',out);s.setAttribute('aria-hidden',String(!out))},{threshold:0});
+  io2.observe(hero);
+})();
+</script>
+</body>
+</html>
