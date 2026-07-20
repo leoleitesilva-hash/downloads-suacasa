@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso de Manutenção de Bicicleta Elétrica — Turma Fundadora</title>
+<meta name="description" content="Aprenda manutenção de bicicleta elétrica e entre para a profissão que mais cresce na mobilidade. Lista de espera da turma fundadora com desconto exclusivo.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Curso de Manutenção de Bicicleta Elétrica — Turma Fundadora">
+<meta property="og:description" content="284 mil e-bikes rodando no Brasil e faltam mecânicos. Entre na lista de espera da turma fundadora com condição exclusiva.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='30' cy='68' r='20' fill='none' stroke='%2338bdf8' stroke-width='7'/%3E%3Ccircle cx='74' cy='68' r='20' fill='none' stroke='%2338bdf8' stroke-width='7'/%3E%3Cpath d='M30 68 L46 38 H66 L74 68 M46 38 L58 68' stroke='%23e2e8f0' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M56 20 L48 40 H62 L52 58' fill='none' stroke='%23fbbf24' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Curso de Manutenção de Bicicleta Elétrica",
+  "description": "Formação online em manutenção de bicicletas elétricas: motores, baterias de lítio, controladores, diagnóstico e reparo.",
+  "inLanguage": "pt-BR",
+  "provider": {
+    "@type": "Person",
+    "name": "Leo Leite Silva",
+    "jobTitle": "Engenheiro Eletricista e Técnico em Eletrônica"
+  }
+}
+</script>
+
+<style>
+/* PSICOLOGIA DAS CORES — nicho técnico/profissão:
+   azul-marinho (confiança, competência técnica) + ciano-elétrico
+   (energia, tecnologia — remete ao "elétrico" do produto) + amarelo-raio
+   (destaque/energia) + CTA LARANJA (ação, contraste máximo com o azul) */
+:root{
+  --navy-900:#0a1220;
+  --navy-800:#0f1b31;
+  --navy-700:#16264a;
+  --cyan:#38bdf8;
+  --volt:#fbbf24;
+  --orange:#f97316;
+  --orange-dark:#dc5f08;
+  --green:#22c55e;
+  --white:#fff;
+  --gray-100:#e9eef6;
+  --gray-300:#b8c4d6;
+  --gray-500:#7d8ba1;
+  --radius:14px;
+  --maxw:1060px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+  background:var(--navy-900);color:var(--gray-100);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+h1,h2,h3{line-height:1.2;font-weight:800}
+h2{font-size:clamp(1.55rem,4vw,2.3rem);text-align:center;margin-bottom:14px;color:var(--white)}
+.section-sub{text-align:center;color:var(--gray-300);max-width:660px;margin:0 auto 40px;font-size:1.05rem}
+.hl{color:var(--volt)}
+.hl-cyan{color:var(--cyan)}
+
+.topbar{background:linear-gradient(90deg,var(--orange-dark),var(--orange));color:#fff;text-align:center;
+  font-weight:700;font-size:.92rem;padding:9px 14px}
+
+/* HERO */
+.hero{background:
+  radial-gradient(ellipse 70% 55% at 78% 8%,rgba(56,189,248,.16),transparent 60%),
+  radial-gradient(ellipse 50% 40% at 10% 95%,rgba(251,191,36,.07),transparent 60%),
+  linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  padding:54px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.badge{display:inline-flex;gap:8px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.45);
+  color:var(--cyan);font-weight:700;font-size:.85rem;padding:7px 16px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(1.8rem,4.4vw,2.8rem);color:var(--white);margin-bottom:16px}
+.subheadline{font-size:clamp(1.02rem,2.2vw,1.2rem);color:var(--gray-300);margin-bottom:28px;max-width:580px}
+.subheadline strong{color:var(--white)}
+
+.cta-btn{display:inline-block;background:linear-gradient(180deg,var(--orange),var(--orange-dark));
+  color:#fff;text-decoration:none;font-weight:800;font-size:clamp(1rem,2vw,1.14rem);
+  padding:18px 36px;border-radius:var(--radius);box-shadow:0 8px 26px rgba(249,115,22,.4);
+  transition:transform .15s,box-shadow .15s;text-align:center}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(249,115,22,.5)}
+.cta-note{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:.87rem;color:var(--gray-500)}
+.cta-note b{color:var(--green)}
+
+.mockup{position:relative;max-width:400px;margin:0 auto}
+.mockup .tag{position:absolute;top:0;right:-6px;background:var(--volt);color:var(--navy-900);
+  font-weight:800;font-size:.78rem;padding:7px 12px;border-radius:8px;transform:rotate(4deg);
+  box-shadow:0 5px 14px rgba(0,0,0,.35);z-index:2}
+
+/* DADOS DO MERCADO */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat-card{background:var(--navy-800);border:1px solid rgba(56,189,248,.18);border-radius:var(--radius);
+  padding:28px 22px;text-align:center}
+.stat-card b{display:block;color:var(--cyan);font-size:2.1rem;font-weight:800;line-height:1.1;margin-bottom:8px}
+.stat-card p{color:var(--gray-300);font-size:.93rem}
+.stat-src{text-align:center;color:var(--gray-500);font-size:.78rem;margin-top:18px}
+
+/* DOR */
+.dor{background:linear-gradient(180deg,var(--navy-800),var(--navy-900))}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pain-card{background:var(--navy-700);border-radius:var(--radius);padding:26px 22px}
+.pain-card .ico{font-size:1.9rem;margin-bottom:10px}
+.pain-card h3{font-size:1.05rem;color:var(--white);margin-bottom:8px}
+.pain-card p{color:var(--gray-300);font-size:.94rem}
+
+/* MÓDULOS PREVISTOS */
+.mod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:880px;margin:0 auto}
+.mod{display:flex;gap:14px;background:var(--navy-800);border-radius:var(--radius);padding:18px 20px;
+  border:1px solid rgba(56,189,248,.15)}
+.mod .num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--cyan);color:var(--navy-900);
+  font-weight:800;display:flex;align-items:center;justify-content:center}
+.mod p{font-size:.95rem;color:var(--gray-300)}
+.mod p b{color:var(--white)}
+.nota-previa{max-width:880px;margin:18px auto 0;text-align:center;font-size:.85rem;color:var(--gray-500)}
+
+/* BENEFÍCIOS */
+.bene{background:linear-gradient(180deg,var(--navy-800),var(--navy-900))}
+.bene-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;max-width:840px;margin:0 auto}
+.bene-item{display:flex;gap:12px;align-items:flex-start;background:var(--navy-700);border-radius:var(--radius);padding:16px 18px}
+.bene-item .check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:rgba(34,197,94,.15);
+  color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem}
+.bene-item p{font-size:.95rem;color:var(--gray-300)}
+.bene-item p b{color:var(--white)}
+
+/* AUTOR */
+.autor-box{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;max-width:840px;margin:0 auto;
+  background:var(--navy-700);border-radius:18px;padding:34px;border:1px solid rgba(251,191,36,.3)}
+.avatar{width:116px;height:116px;border-radius:50%;background:linear-gradient(135deg,var(--navy-800),var(--navy-900));
+  display:flex;align-items:center;justify-content:center;font-size:2.9rem;border:3px solid var(--volt)}
+.autor-box h3{color:var(--white);font-size:1.3rem;margin-bottom:4px}
+.autor-box .cred{color:var(--volt);font-weight:700;font-size:.92rem;margin-bottom:10px}
+.autor-box p{color:var(--gray-300);font-size:.96rem}
+
+/* PROVA SOCIAL — oculta até existirem depoimentos reais
+<section class="depoimentos"> ... </section> */
+.depoimentos{display:none}
+
+/* OFERTA FUNDADOR */
+.fundador{background:linear-gradient(180deg,var(--navy-800),var(--navy-900))}
+.fundador-box{max-width:560px;margin:0 auto;background:var(--navy-700);border-radius:20px;padding:38px 32px;
+  text-align:center;border:2px solid var(--volt);box-shadow:0 16px 44px rgba(0,0,0,.4)}
+.fundador-box h3{color:var(--white);font-size:1.3rem;margin-bottom:18px}
+.fundador-box ul{list-style:none;text-align:left;margin:0 0 22px}
+.fundador-box li{padding:9px 0;font-size:.95rem;border-bottom:1px dashed rgba(184,196,214,.15);color:var(--gray-300)}
+.fundador-box li b{color:var(--volt)}
+.preco-nota{font-size:.95rem;color:var(--gray-300);margin-bottom:18px}
+.preco-nota s{color:#f87171}
+.garantia{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:12px 20px;border-radius:99px;
+  background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.35);color:var(--green);font-weight:700;font-size:.9rem}
+
+/* FAQ */
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{background:var(--navy-800);border:1px solid rgba(56,189,248,.15);border-radius:var(--radius);
+  margin-bottom:12px;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:17px 20px;font-weight:700;color:var(--white);list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--volt);font-size:1.35rem;font-weight:800;transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{padding:0 20px 17px;color:var(--gray-300);font-size:.94rem}
+
+/* CTA FINAL */
+.cta-final{background:
+  radial-gradient(ellipse 70% 80% at 50% 0%,rgba(249,115,22,.13),transparent 60%),
+  linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  text-align:center;padding:76px 0}
+.cta-final h2{color:var(--white)}
+.cta-final .section-sub{margin-bottom:30px}
+
+footer{padding:26px 20px;text-align:center;color:var(--gray-500);font-size:.84rem;
+  border-top:1px solid rgba(125,139,161,.15)}
+
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(10,18,32,.94);backdrop-filter:blur(8px);border-top:1px solid rgba(249,115,22,.35);
+  display:none;transform:translateY(110%);transition:transform .3s}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .cta-btn{display:block;width:100%;padding:14px 18px;font-size:.98rem}
+
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .stat-grid,.pain-grid{grid-template-columns:1fr}
+  .mod-grid,.bene-grid{grid-template-columns:1fr}
+  .autor-box{grid-template-columns:1fr;text-align:center}
+  .avatar{margin:0 auto}
+  .sticky-cta{display:block}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">⚡ TURMA FUNDADORA EM FORMAÇÃO — quem entra na lista garante a menor condição que este curso terá</div>
+
+<!-- ATENÇÃO -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">🔧 NOVA PROFISSÃO DA MOBILIDADE ELÉTRICA</span>
+      <h1>São <span class="hl">284 mil bicicletas elétricas</span> rodando no Brasil — e quase ninguém sabe consertá-las</h1>
+      <p class="subheadline">
+        Aprenda <strong>manutenção de bicicleta elétrica</strong> — motor, bateria de lítio,
+        controlador e diagnóstico — com um <strong>engenheiro eletricista com 20+ anos de
+        eletrônica</strong>, e cobre pelo serviço que as oficinas comuns não sabem fazer.
+      </p>
+      <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DA LISTA (WhatsApp/formulário) -->
+        ⚡ QUERO ENTRAR NA TURMA FUNDADORA
+      </a>
+      <div class="cta-note">
+        <span><b>✓</b> Lista de espera gratuita</span>
+        <span><b>✓</b> Condição de fundador garantida</span>
+        <span><b>✓</b> Sem compromisso</span>
+      </div>
+    </div>
+    <div class="mockup">
+      <span class="tag">TURMA FUNDADORA</span>
+      <!-- Mockup ilustrativo em SVG — TROCAR por foto real (você na bancada com uma e-bike) -->
+      <svg viewBox="0 0 420 320" width="420" height="320" style="width:100%;height:auto" role="img" aria-label="Ilustração de uma bicicleta elétrica">
+        <defs>
+          <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/>
+            <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="210" cy="292" rx="180" ry="14" fill="#000" opacity=".35"/>
+        <circle cx="110" cy="230" r="74" fill="none" stroke="#1e3a5f" stroke-width="16"/>
+        <circle cx="110" cy="230" r="74" fill="none" stroke="#38bdf8" stroke-width="6"/>
+        <circle cx="310" cy="230" r="74" fill="none" stroke="#1e3a5f" stroke-width="16"/>
+        <circle cx="310" cy="230" r="74" fill="none" stroke="#38bdf8" stroke-width="6"/>
+        <circle cx="110" cy="230" r="10" fill="#e9eef6"/>
+        <circle cx="310" cy="230" r="10" fill="#e9eef6"/>
+        <path d="M110 230 L170 130 H262 L310 230 M170 130 L218 230 M262 130 L244 96 H286" fill="none" stroke="#e9eef6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M150 96 h44 l-10 18 h-40 z" fill="#e9eef6"/>
+        <rect x="176" y="158" width="72" height="26" rx="8" fill="#16264a" stroke="#fbbf24" stroke-width="3"/>
+        <text x="212" y="177" font-family="Arial" font-size="15" font-weight="bold" fill="#fbbf24" text-anchor="middle">36V</text>
+        <circle cx="218" cy="230" r="24" fill="#16264a" stroke="#38bdf8" stroke-width="4"/>
+        <path d="M222 216 L210 232 h10 L214 246 L228 228 h-10 z" fill="#fbbf24"/>
+        <rect x="40" y="40" width="0" height="0"/>
+        <path d="M330 60 L318 86 h14 L322 112" fill="none" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M84 52 L74 74 h12 L78 96" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+        <ellipse cx="210" cy="250" rx="190" ry="60" fill="url(#glow)" opacity=".5"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- INTERESSE: POR QUE AGORA (dados reais) -->
+<section>
+  <div class="container">
+    <h2 class="reveal">A profissão está nascendo <span class="hl-cyan">agora</span> — e falta gente</h2>
+    <p class="section-sub reveal">Os números do mercado brasileiro de e-bikes não deixam dúvida:</p>
+    <div class="stat-grid">
+      <div class="stat-card reveal"><b>+87%</b><p>de crescimento na produção de bicicletas elétricas no Brasil</p></div>
+      <div class="stat-card reveal"><b>284 mil</b><p>e-bikes em circulação — eram só 7,6 mil em 2016</p></div>
+      <div class="stat-card reveal"><b>R$ 511 mi</b><p>por ano é o tamanho do mercado, com projeção de +42% a 55%</p></div>
+    </div>
+    <p class="stat-src">Fontes: Aliança Bike (dados do setor 2024/2025) e Polo Industrial de Manaus.</p>
+  </div>
+</section>
+
+<!-- INTERESSE: DOR -->
+<section class="dor">
+  <div class="container">
+    <h2 class="reveal">Enquanto isso, quem trabalha com bike <span class="hl">fica para trás</span></h2>
+    <p class="section-sub reveal">A eletrificação chegou — e a maioria não está preparada:</p>
+    <div class="pain-grid">
+      <div class="pain-card reveal"><div class="ico">🔋</div><h3>Medo de mexer na elétrica</h3><p>Motor, bateria de lítio, controlador: uma e-bike chega na oficina e o mecânico comum tem que recusar o serviço.</p></div>
+      <div class="pain-card reveal"><div class="ico">📉</div><h3>Salário no teto</h3><p>Mecânico de bicicleta comum ganha em média R$ 2 mil (CLT). Sem especialização, não há como cobrar mais.</p></div>
+      <div class="pain-card reveal"><div class="ico">🚫</div><h3>Cliente sem opção</h3><p>Donos de e-bike enfrentam manutenção cara e demorada porque faltam profissionais qualificados — a demanda existe e está sem atendimento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE O CURSO VAI COBRIR -->
+<section>
+  <div class="container">
+    <h2 class="reveal">O que você vai dominar no curso</h2>
+    <p class="section-sub reveal">Formação prática, do zero ao diagnóstico completo:</p>
+    <div class="mod-grid">
+      <div class="mod reveal"><div class="num">1</div><p><b>Como a e-bike funciona</b>: motor hub e central, sensores, display e a lógica do sistema elétrico.</p></div>
+      <div class="mod reveal"><div class="num">2</div><p><b>Baterias de lítio sem mistério</b>: diagnóstico, cuidados, carregamento e segurança (o item mais caro da bike).</p></div>
+      <div class="mod reveal"><div class="num">3</div><p><b>Controlador e chicote</b>: identificar defeitos, testar com multímetro e substituir com segurança.</p></div>
+      <div class="mod reveal"><div class="num">4</div><p><b>Diagnóstico passo a passo</b>: método para achar qualquer defeito — da bike que não liga ao motor que falha.</p></div>
+      <div class="mod reveal"><div class="num">5</div><p><b>Manutenção preventiva</b>: o checklist que fideliza cliente e gera receita recorrente.</p></div>
+      <div class="mod reveal"><div class="num">6</div><p><b>Precificação e primeiros clientes</b>: quanto cobrar e como conseguir os primeiros serviços.</p></div>
+    </div>
+    <p class="nota-previa">Estrutura prevista da turma fundadora — os inscritos da lista de espera ajudam a priorizar os módulos.</p>
+  </div>
+</section>
+
+<!-- DESEJO: BENEFÍCIOS -->
+<section class="bene">
+  <div class="container">
+    <h2 class="reveal">O que muda para você</h2>
+    <p class="section-sub reveal">Entrar cedo numa profissão em expansão tem vantagens que não voltam:</p>
+    <div class="bene-grid">
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Serviço que pouca gente faz</b> = você cobra pelo valor, não pelo preço da concorrência.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Demanda batendo na porta</b>: frota de e-bikes cresce enquanto a oferta de mecânicos não acompanha.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Comece sem loja</b>: atendimento domiciliar ou na sua garagem, com bancada simples.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Base de eletrônica de verdade</b>: você aprende o porquê, não só o "troca a peça".</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Renda extra ou profissão</b>: dá para começar nos fins de semana e crescer conforme a agenda enche.</p></div>
+      <div class="bene-item reveal"><div class="check">✓</div><p><b>Você entra antes do mercado lotar</b> — vantagem real de quem chega primeiro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORIDADE -->
+<section>
+  <div class="container">
+    <div class="autor-box reveal">
+      <div class="avatar">👨‍🔧</div><!-- TROCAR pela foto real do Leo -->
+      <div>
+        <h3>Quem vai te ensinar</h3>
+        <p class="cred">Leo Leite Silva — Engenheiro Eletricista · Técnico em Eletrônica · 20+ anos de experiência</p>
+        <p>
+          São mais de duas décadas diagnosticando e consertando sistemas elétricos e
+          eletrônicos na prática. Neste curso, essa base vira um método direto para
+          você dominar a parte que assusta todo mundo nas e-bikes — a elétrica —
+          com segurança e confiança.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL — seção oculta até existirem depoimentos reais da turma fundadora
+<section class="depoimentos">
+  <div class="container">
+    <h2>Quem já passou pela formação</h2>
+    [depoimento real + nome + cidade]
+  </div>
+</section>
+-->
+
+<!-- OFERTA FUNDADOR -->
+<section class="fundador" id="oferta">
+  <div class="container">
+    <h2 class="reveal">Por que entrar na lista <span class="hl">agora</span></h2>
+    <p class="section-sub reveal">A turma fundadora terá condições que nunca mais se repetem:</p>
+    <div class="fundador-box reveal">
+      <h3>🏁 Condição de Fundador</h3>
+      <ul>
+        <li><b>Menor preço que o curso terá</b> — o lançamento está previsto na faixa de R$ 297; fundadores pagam menos</li>
+        <li><b>Acesso antecipado</b> às aulas antes da abertura geral</li>
+        <li><b>Voz ativa</b>: os fundadores ajudam a definir os módulos prioritários</li>
+        <li><b>Bônus de fundador</b> exclusivo, anunciado na abertura</li>
+      </ul>
+      <p class="preco-nota">Entrar na lista é <b>gratuito e sem compromisso</b> — você só garante a condição.</p>
+      <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DA LISTA (WhatsApp/formulário) -->⚡ GARANTIR MINHA CONDIÇÃO DE FUNDADOR</a>
+      <div><span class="garantia">🛡️ Sem spam: só avisos do lançamento. Sair da lista quando quiser.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <h2 class="reveal">Perguntas frequentes</h2>
+    <div class="faq-list reveal">
+      <details class="faq-item"><summary>Preciso já ser mecânico ou entender de elétrica?</summary><p>Não. O curso parte do zero: primeiro você entende como a e-bike funciona, depois pratica diagnóstico guiado. Quem já é mecânico de bike acelera; quem vem de fora constrói a base completa.</p></details>
+      <details class="faq-item"><summary>Preciso de ferramentas caras para começar?</summary><p>Não. Com um multímetro e ferramentas básicas de bancada você executa a maior parte dos diagnósticos — o curso mostra o kit mínimo e o que adicionar conforme o serviço entra.</p></details>
+      <details class="faq-item"><summary>Quando o curso será lançado?</summary><p>A turma fundadora será aberta primeiro para a lista de espera — quem está na lista recebe a data em primeira mão e garante a condição de fundador antes da abertura geral.</p></details>
+      <details class="faq-item"><summary>Entrar na lista custa algo ou me obriga a comprar?</summary><p>Não custa nada e não te obriga a nada. A lista só garante a menor condição e o acesso antecipado — se não fizer sentido para você no lançamento, é só não entrar.</p></details>
+      <details class="faq-item"><summary>Dá para viver disso ou é só renda extra?</summary><p>Os dois caminhos existem: dá para começar atendendo nos fins de semana e, com a agenda cheia, migrar para atividade principal — o mercado está em expansão e sem profissionais suficientes.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2 class="reveal">Daqui a alguns anos, todo bairro terá<br>um especialista em e-bike</h2>
+    <p class="section-sub reveal">
+      A pergunta é: vai ser você ou o seu concorrente? Quem entra cedo pega o mercado
+      sem fila. A lista de espera é gratuita — o custo de ficar de fora é que é alto.
+    </p>
+    <a class="cta-btn reveal" href="#"><!-- TROCAR PELO LINK DA LISTA (WhatsApp/formulário) -->⚡ QUERO SER FUNDADOR</a>
+    <div style="margin-top:20px"><span class="garantia">🛡️ Gratuito · Sem compromisso · Condição de fundador garantida</span></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Leo Leite Silva — Todos os direitos reservados.</p>
+  <p>Curso de Manutenção de Bicicleta Elétrica · Turma Fundadora</p>
+</footer>
+
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a class="cta-btn" href="#"><!-- TROCAR PELO LINK DA LISTA (WhatsApp/formulário) -->⚡ ENTRAR NA TURMA FUNDADORA</a>
+</div>
+
+<script>
+(function(){
+  document.body.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  var hero=document.querySelector('.hero'),s=document.getElementById('stickyCta');
+  var io2=new IntersectionObserver(function(es){var out=!es[0].isIntersecting;s.classList.toggle('show',out);s.setAttribute('aria-hidden',String(!out))},{threshold:0});
+  io2.observe(hero);
+})();
+</script>
+</body>
+</html>
