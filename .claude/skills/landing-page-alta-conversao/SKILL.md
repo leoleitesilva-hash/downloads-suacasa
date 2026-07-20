@@ -48,16 +48,35 @@ Conduza como um estrategista de lançamento. Não avance sem a resposta.
 ### Pergunta 1 — Tema e nicho
 > "Qual é o tema do seu produto e em qual nicho ele está?"
 
-**Assim que o usuário responder, faça imediatamente uma pesquisa breve na
-web** (WebSearch) para levantar:
-- Os **termos mais buscados** do nicho (palavras que o público usa — elas
-  entram na headline, no SEO e na copy)
-- O **público-alvo típico**: quem compra, faixa etária, dores principais,
-  o que já tentou e não funcionou
+**Assim que o usuário responder, faça imediatamente a pesquisa do nicho**
+(WebSearch), em duas partes:
+
+**Parte A. Termos e público**
+- Os **termos mais buscados** do nicho (as palavras que o público usa,
+  que entram na headline, no SEO e na copy)
+- O **público-alvo típico**: quem compra, faixa etária, o que já tentou
+  e não funcionou
 - Como os concorrentes se posicionam
 
-Apresente um mini-relatório ao usuário (termos + persona) e confirme:
-"É esse público mesmo que você quer atingir?"
+**Parte B. MINERAÇÃO DE DORES (obrigatória)**
+O objetivo é descobrir o que o público PERGUNTA e RECLAMA com as palavras
+dele, nos vídeos do YouTube e perfis de Instagram do nicho:
+1. Busque os vídeos e canais mais vistos do nicho ("[nicho] youtube",
+   "[nicho] como fazer", "[nicho] não funciona", "[nicho] vale a pena")
+2. Garimpe as dores nos comentários e discussões. Como comentários de
+   YouTube/Instagram nem sempre são acessíveis por busca, use também os
+   lugares onde essas mesmas perguntas ficam indexadas: Reddit e fóruns
+   brasileiros, avaliações de produtos do nicho, seções "perguntas
+   frequentes" de concorrentes e o "as pessoas também perguntam" do Google
+3. Liste as perguntas mais recorrentes e **filtre as 3 a 5 dores mais
+   relevantes** (as que aparecem repetidas, com carga emocional)
+4. **A dor número 1 vira matéria-prima da headline** (Fase 3): traduza a
+   dor para promessa, usando as MESMAS palavras que o público usa no
+   comentário, não o jargão do especialista
+
+Apresente ao usuário o mini-relatório com: termos + persona + **mapa de
+dores ranqueado** + qual dor você sugere levar para a headline. Confirme:
+"É esse público e essa dor mesmo?"
 
 ### Pergunta 2 — Produto existente
 > "Você já tem o produto desenvolvido (e-book, curso, videoaula, mentoria)?
@@ -196,8 +215,11 @@ falha grave. O dono do produto decide a promessa.
 
 ### COPY HUMANIZADA (obrigatório em toda a página)
 
-A copy não pode parecer texto de IA. Antes de entregar, revise com os
-critérios da skill `humanizer-ptbr` (invoque se disponível). Regras fixas:
+A copy não pode parecer texto de IA. A revisão de humanização é ETAPA
+FINAL OBRIGATÓRIA antes do QA visual: passe toda a copy pelos critérios
+da skill `humanizer-ptbr` (invoque se disponível). A headline e as seções
+de dor devem usar as palavras garimpadas nos comentários do público
+(mineração de dores da Fase 0), que já nascem humanas. Regras fixas:
 
 1. **PROIBIDO travessão (—)** em qualquer texto da página. Troque por
    vírgula, ponto ou reescreva a frase.
