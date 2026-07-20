@@ -21,6 +21,24 @@ description: >
 Fluxo completo: entrevista guiada → pesquisa de nicho → copy → página.
 A copy vem antes do design. **Nunca invente dados, depoimentos ou números.**
 
+## REGRAS DE OURO (valem para produção E para testes)
+
+1. **O produto final é SEMPRE uma página HTML completa** (`index.html`
+   autossuficiente, publicável) — nunca só um texto de copy ou um plano.
+2. **Salvar em subpasta própria** com o slug do produto (ex.:
+   `bolo-de-pote/index.html`). NUNCA sobrescrever um `index.html` já
+   existente de outro produto no repositório.
+3. **QA visual obrigatório antes de entregar** (ver Fase 11): screenshot
+   da página em desktop e mobile — nenhuma página é entregue sem ter sido
+   vista renderizada.
+4. **Modo teste/simulação**: quando o usuário pedir um teste, responda a
+   entrevista com respostas simuladas claramente rotuladas, e marque na
+   página todo dado fictício com um selo visível `SIMULADO` — dado
+   inventado jamais pode parecer real, nem em teste.
+5. Ao final, entregue sempre o **relatório de pendências**: o que o
+   usuário precisa trocar antes de publicar (link do checkout, foto real,
+   capa real, depoimentos reais).
+
 ---
 
 ## FASE 0 — ENTREVISTA GUIADA (obrigatória; UMA pergunta por vez)
@@ -53,14 +71,24 @@ Com o material em mãos:
 - Ler o sumário/estrutura do produto para transformar módulos/capítulos
   na seção "o que você vai receber"
 
+**SEM capa/arquivo anexado?** Não trave: gere um **mockup ilustrativo em
+SVG inline** temático do produto (pote, livro, celular com curso…) com
+comentário `<!-- TROCAR pela foto real -->`, e liste a troca no relatório
+de pendências. Atenção: SVG inline SEMPRE com `width`/`height` explícitos
++ `style="width:100%;height:auto"` — sem isso o SVG colapsa e o herói fica
+vazio (bug real encontrado em teste).
+
 ### Pergunta 3 — Foto e vídeo do autor
 > "Me envie uma foto sua (do autor). Você tem ou pretende gravar um vídeo
 > de vendas?"
 
 - **Foto**: entra na seção de autoridade (gatilho de afeição + autoridade)
+- **Sem foto anexada?** Avatar ilustrado como placeholder + comentário
+  `<!-- TROCAR pela foto real -->` + item no relatório de pendências
 - **Se o autor topa gravar vídeo**: gere um **roteiro de VSL de 2–3
   minutos** sobre o tema (vídeo de vendas aumenta conversão; estrutura
-  abaixo na Fase 5). Adapte o roteiro ao tema/nicho pesquisado.
+  abaixo na Fase 5). Adapte o roteiro ao tema/nicho pesquisado e entregue
+  como `roteiro-vsl.md`.
 
 ### Pergunta 4 — Prova social
 > "Você tem depoimentos, prints de resultados, avaliações ou números de
@@ -243,9 +271,30 @@ Title com termo mais buscado + benefício (<60); description persuasiva
 JSON-LD `Product`/`Course` com `Offer` e preço; um `<h1>`; `alt` em tudo;
 contraste AA.
 
+**A og-image é obrigatória mesmo sem foto do produto**: gere com Pillow
+(fundo na paleta da página + headline + preço) e salve em
+`assets/img/og.jpg` (< 100 KB).
+
 ---
 
-## FASE 11 — CHECKLIST FINAL
+## FASE 11 — QA VISUAL (obrigatório antes de entregar)
+
+Nenhuma página é entregue sem ser vista renderizada. Com Playwright
+(Chromium em `/opt/pw-browsers/chromium`):
+
+1. Screenshot **desktop 1280×800**: acima da dobra (teste dos 5 segundos)
+2. Screenshot **mobile 375×720**: acima da dobra (CTA visível sem rolar?)
+3. Screenshot da **seção de preço** (ancoragem + garantia aparecem juntas?)
+4. Scroll no mobile: **sticky CTA aparece** após o herói?
+5. Conferir: nenhuma imagem/SVG colapsada, nenhum texto estourando,
+   contraste ok
+
+Encontrou problema → corrige → screenshota de novo. Só então entrega,
+enviando os screenshots ao usuário (SendUserFile).
+
+---
+
+## FASE 12 — CHECKLIST FINAL
 
 - [ ] Entrevista completa (tema, pesquisa, produto, autor, prova, preço, checkout)?
 - [ ] Termos mais buscados do nicho na headline e no title?
@@ -261,16 +310,20 @@ contraste AA.
 - [ ] Herói < 100 KB, página < 3s, cache + CDN configurados?
 - [ ] OG image ok? Responsivo 375/768/1280?
 - [ ] Roteiro de VSL entregue (se autor grava vídeo)?
+- [ ] QA visual feito (screenshots desktop + mobile enviados ao usuário)?
+- [ ] Placeholders/simulados marcados e listados no relatório de pendências?
 
-## Entregáveis padrão
+## Entregáveis padrão (em subpasta com o slug do produto)
 
 ```
-index.html      # página completa, autossuficiente
-assets/img/     # capa releitura, foto autor, provas sociais, og-image (WebP)
-vercel.json     # cache/CDN
-.htaccess       # cache Apache
-roteiro-vsl.md  # roteiro do vídeo de vendas (quando aplicável)
-README.md       # como publicar + onde trocar o link de checkout
+<slug-do-produto>/
+├── index.html      # A PÁGINA HTML — produto final obrigatório, sempre
+├── assets/img/     # capa releitura, foto autor, provas, og.jpg (WebP)
+├── roteiro-vsl.md  # roteiro do vídeo de vendas (quando aplicável)
+└── PENDENCIAS.md   # o que trocar antes de publicar (checkout, fotos,
+                    # depoimentos reais, remoção dos selos SIMULADO)
+vercel.json         # cache/CDN (raiz do projeto)
+.htaccess           # cache Apache (raiz do projeto)
 ```
 
 > Fontes: Hotmart (estrutura de página de vendas e checkout), Unbounce/
