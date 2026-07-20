@@ -1,0 +1,35 @@
+# ============================================================
+# Cache do navegador + compressão (para hospedagem Apache)
+# Em hospedagem Vercel/Netlify, quem manda é o vercel.json —
+# este arquivo é o equivalente para hosts tradicionais (cPanel etc.)
+# ============================================================
+
+# --- Compressão GZIP/Brotli (menos bytes na rede) ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# --- Cache do navegador ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Imagens: 1 ano (nomes de arquivo versionados nunca mudam)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  # PDF: 1 dia (permite atualizar o guia)
+  ExpiresByType application/pdf "access plus 1 day"
+  # HTML: sempre revalidar (para a página atualizar na hora)
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
