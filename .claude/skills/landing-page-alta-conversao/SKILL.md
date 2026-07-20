@@ -330,6 +330,18 @@ Regras: CTA em cor de ação (laranja/verde) com contraste máximo, exclusiva
 do botão; máximo 3 cores + neutros; direcionais apontando para o CTA;
 espaço em branco ao redor do botão; hierarquia visual clara.
 
+**A página deve PARECER o DEPOIS da promessa.** Página que vende luz e
+aconchego é clara e quente, nunca escura. Página de sono é serena, de
+energia é vibrante. Erro real de produção: LP de iluminação com fundo
+azul-noite ficou "horrível" na avaliação do dono. Fundo escuro só quando
+o DEPOIS do produto é escuro (cinema, games, premium noturno) ou como
+UMA seção de contraste proposital.
+
+**Não repita o mesmo template visual entre produtos.** Varie fundo
+claro/escuro, tipografia dos títulos (serifa editorial vs sans), formato
+do herói e estilo dos cartões. Duas páginas da mesma conta não podem
+parecer a mesma página com outra cor.
+
 ---
 
 ## FASE 9 — PERFORMANCE (velocidade É conversão; 1s a mais ≈ -7%)
