@@ -99,12 +99,26 @@ vazio (bug real encontrado em teste).
 - Sem prova social ainda? Seção fica pronta e oculta no código, e a
   autoridade do autor carrega a página. NUNCA inventar depoimento.
 
-### Pergunta 5 — Preço e oferta
-> "Qual o preço? Existe preço 'cheio' e preço promocional? Parcelamento?
-> Tem bônus inclusos?"
+### Pergunta 5 — Preço e oferta (PERGUNTA ABERTA — nunca ofereça faixas prontas)
+> "Qual preço VOCÊ quer cobrar? Me diga: preço cheio (âncora), preço
+> promocional, parcelamento e bônus inclusos."
 
+- O preço é decisão do usuário: pergunte aberto e espere os números dele.
+  Só sugira faixa se ele pedir ajuda — e aí apresente pesquisa de preços
+  dos concorrentes do nicho como base, não chute.
 - Coletar: preço âncora (de), preço real (por), parcelas ("12x de R$ X"),
   bônus com valor individual de cada um.
+
+### Pergunta 5b — A MÉTRICA DA PROMESSA (obrigatória)
+> "Qual resultado NUMÉRICO seu cliente/aluno pode alcançar, e em quanto
+> tempo? (ex.: 'faturar R$ 2.000/semana', 'perder 15 kg', 'reduzir a conta
+> de luz em 20%') — e o que sustenta esse número?"
+
+- Essa resposta vira a headline (Fase 3). Sem métrica + prazo, a headline
+  sai genérica e não converte.
+- Se o usuário não souber o número, **pesquise os preços/resultados reais
+  do mercado** e proponha uma promessa defensável (ex.: revisão de e-bike
+  custa R$ 150–300 → "10 revisões/semana = R$ 2.000").
 
 ### Pergunta 6 — Link de checkout
 > "Você já tem o link de pagamento (Hotmart, Kiwify, Eduzz, outra
@@ -150,11 +164,35 @@ termos mais buscados do nicho (Fase 0.1) e apresente as 3 melhores.**
 **Teste 4U** (nota 1–4 cada; refazer se < 12): Útil, Urgente, Único,
 Ultra-específico.
 
-Fórmulas: `[Resultado] em [tempo/passos] sem [maior objeção]` ·
-`Como [público] consegue [resultado] mesmo [obstáculo]` ·
-`O único [categoria] que [diferencial]` · `Pare de [dor]. Comece a [resultado].`
+**FÓRMULA DA PROMESSA ESPECÍFICA (obrigatória na headline principal):**
+
+> `[Verbo de resultado] + [MÉTRICA NUMÉRICA] + [PRAZO] + [com o ENTREGÁVEL: método/guia/kit/curso] (+ sem [objeção])`
+
+A headline NUNCA pode ser genérica/informativa — precisa prometer um ganho
+mensurável com prazo. Exemplos do padrão:
+- "Fature até R$ 2.000 por semana consertando bicicleta elétrica — do zero
+  ao primeiro cliente em 30 dias com o método"
+- "Perca 15 kg em 8 semanas com o guia, sem cortar o que você ama"
+- "Dobre o número de clientes em 2 semanas com esse kit"
+- "Reduza sua conta de luz em 20% em 30 dias com esse método"
+
+**Regras da promessa:**
+- Promessa de dinheiro/resultado exige **a conta na página**: um bloco que
+  mostra a matemática com preços reais pesquisados ("revisão custa
+  R$ 150–300 → 10 revisões = R$ 2.000/semana"). Promessa sem lastro
+  destrói confiança e é antiética.
+- Use "até"/"pode" quando o resultado é potencial, nunca garantia de renda.
+- A métrica vem da Pergunta 5b da entrevista.
+
+Fórmulas complementares: `Como [público] consegue [resultado] mesmo
+[obstáculo]` · `O único [categoria] que [diferencial]` ·
+`Pare de [dor]. Comece a [resultado].`
 
 Sempre resultado, nunca característica. Subheadline = mecanismo + para quem.
+
+**GATE OBRIGATÓRIO**: apresente as 3 melhores headlines ao usuário
+(AskUserQuestion) e só monte a página com a escolhida. Pular esta etapa é
+falha grave — o dono do produto decide a promessa.
 
 ---
 

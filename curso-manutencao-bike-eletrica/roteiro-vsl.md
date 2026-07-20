@@ -8,10 +8,10 @@ Fale como quem conversa, não como quem lê.
 ---
 
 **[0:00–0:15 — GANCHO]**
-"Existem hoje 284 mil bicicletas elétricas rodando no Brasil — e quando uma
-delas quebra, o dono descobre uma coisa: quase ninguém sabe consertar.
-Eu vou te mostrar como transformar essa falta de profissional na sua
-nova fonte de renda."
+"Uma revisão de bicicleta elétrica custa de 150 a 300 reais. Dez revisões
+numa semana são 2 mil reais no seu bolso — e o Brasil tem 284 mil e-bikes
+rodando com quase nenhum mecânico que saiba mexer nelas. Deixa eu te
+mostrar como entrar nessa profissão em 30 dias."
 
 **[0:15–0:45 — IDENTIFICAÇÃO]**
 "Se você trabalha com bicicleta, você já viveu isso: chega uma e-bike com
@@ -33,10 +33,10 @@ ligar um motor na bancada — 15 a 20 segundos de demonstração real valem mais
 que qualquer promessa]"
 
 **[2:00–2:30 — OFERTA FUNDADOR]**
-"O curso vai abrir primeiro para a turma fundadora: quem estiver na lista de
-espera vai ter o menor preço que esse curso vai custar, acesso antecipado às
-aulas e ainda vai me ajudar a escolher os módulos prioritários. A lista é
-gratuita e não te obriga a nada."
+"O curso vai abrir primeiro para a turma fundadora por 97 reais — o menor
+preço que ele vai ter; as próximas turmas não pagarão isso. Quem está na
+lista ainda leva acesso antecipado e escolhe comigo os módulos prioritários.
+Entrar na lista é grátis e não te obriga a nada."
 
 **[2:30–3:00 — CTA]**
 "Clica no botão aqui embaixo e entra na lista da turma fundadora. É de graça,

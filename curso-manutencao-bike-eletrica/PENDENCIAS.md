@@ -11,9 +11,12 @@
    e-bike/bancada (WebP < 100 KB) quando tiver
 4. **Gravar a VSL** com o `roteiro-vsl.md` e embutir na página (thumbnail
    + clique para carregar o player)
-5. **Preço previsto**: a página cita "faixa de R$ 297" — confirmar antes
-   do lançamento (a promessa de fundador é pagar MENOS que o preço de
-   lançamento; precisa ser cumprida)
+5. **Preço de fundador R$ 97**: a página promete que é o menor preço que o
+   curso terá e que as próximas turmas não pagarão isso — essa promessa
+   PRECISA ser cumprida no lançamento (suba o preço depois da fundadora)
+5b. **Promessa "até R$ 2.000/semana"**: sustentada na página pela conta
+   (10 revisões × R$ 200, preços de mercado). Mantenha o bloco da conta
+   sempre visível junto da promessa
 6. **Depoimentos**: quando os primeiros fundadores concluírem, preencher a
    seção de prova social (está oculta no código) e reativá-la
 7. **Domínio**: atualizar `og:image` e adicionar `canonical` quando o
