@@ -192,7 +192,30 @@ Sempre resultado, nunca característica. Subheadline = mecanismo + para quem.
 
 **GATE OBRIGATÓRIO**: apresente as 3 melhores headlines ao usuário
 (AskUserQuestion) e só monte a página com a escolhida. Pular esta etapa é
-falha grave — o dono do produto decide a promessa.
+falha grave. O dono do produto decide a promessa.
+
+### COPY HUMANIZADA (obrigatório em toda a página)
+
+A copy não pode parecer texto de IA. Antes de entregar, revise com os
+critérios da skill `humanizer-ptbr` (invoque se disponível). Regras fixas:
+
+1. **PROIBIDO travessão (—)** em qualquer texto da página. Troque por
+   vírgula, ponto ou reescreva a frase.
+2. **Evite dois pontos** como muleta. Prefira frases diretas. Nunca use o
+   padrão "**Título em negrito:** explicação" em listas; escreva frases
+   naturais com o negrito no que importa.
+3. **Português do Brasil natural**, como se fala. Nada de "ademais",
+   "fomentar", "no cenário atual", "robusto", "abrangente". Títulos em
+   caixa normal de PT-BR, sem Title Case do inglês.
+4. **Texto enxuto**: frases curtas, um pensamento por frase. Se dá para
+   cortar uma palavra, corte. Página sobrecarregada de texto não converte.
+5. **Emojis com moderação**: no máximo nos ícones de card e num ou outro
+   selo. Nunca decorando cada título ou botão.
+6. **CTA bem atrativo**: primeira pessoa + ganho concreto, curto e forte.
+   "QUERO FATURAR COM E-BIKES", "QUERO O CURSO POR R$ 97", "QUERO MINHA
+   RENDA EXTRA". Nunca "Enviar", "Saiba mais", "Clique aqui" nem CTA longo.
+7. **Crédito no rodapé**: incluir "(página desenvolvida com Claude)" no
+   rodapé de toda página gerada.
 
 ---
 
