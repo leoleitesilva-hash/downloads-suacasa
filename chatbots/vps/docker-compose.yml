@@ -1,0 +1,103 @@
+# Stack de chatbots — Sua Casa Mais Segura
+# Evolution API (WhatsApp) + Typebot (fluxos) + Postgres + Redis + Caddy (HTTPS)
+# Configure o arquivo .env antes de subir (veja .env.exemplo e INSTALACAO.md)
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+
+  evolution-api:
+    image: evoapicloud/evolution-api:latest
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      SERVER_URL: https://${EVOLUTION_DOMINIO}
+      AUTHENTICATION_API_KEY: ${EVOLUTION_API_KEY}
+      DATABASE_ENABLED: "true"
+      DATABASE_PROVIDER: postgresql
+      DATABASE_CONNECTION_URI: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/evolution
+      DATABASE_CONNECTION_CLIENT_NAME: evolution
+      CACHE_REDIS_ENABLED: "true"
+      CACHE_REDIS_URI: redis://redis:6379/1
+      CACHE_REDIS_PREFIX_KEY: evolution
+      TYPEBOT_ENABLED: "true"
+      LOG_LEVEL: ERROR,WARN
+    volumes:
+      - evolution_instances:/evolution/instances
+
+  typebot-builder:
+    image: baptistearno/typebot-builder:latest
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/typebot
+      ENCRYPTION_SECRET: ${TYPEBOT_ENCRYPTION_SECRET}
+      NEXTAUTH_URL: https://${TYPEBOT_BUILDER_DOMINIO}
+      NEXT_PUBLIC_VIEWER_URL: https://${TYPEBOT_VIEWER_DOMINIO}
+      ADMIN_EMAIL: ${TYPEBOT_ADMIN_EMAIL}
+      DISABLE_SIGNUP: "true"
+      SMTP_HOST: ${SMTP_HOST}
+      SMTP_PORT: ${SMTP_PORT}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      NEXT_PUBLIC_SMTP_FROM: ${SMTP_FROM}
+
+  typebot-viewer:
+    image: baptistearno/typebot-viewer:latest
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/typebot
+      ENCRYPTION_SECRET: ${TYPEBOT_ENCRYPTION_SECRET}
+      NEXTAUTH_URL: https://${TYPEBOT_BUILDER_DOMINIO}
+      NEXT_PUBLIC_VIEWER_URL: https://${TYPEBOT_VIEWER_DOMINIO}
+
+  caddy:
+    image: caddy:2-alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      EVOLUTION_DOMINIO: ${EVOLUTION_DOMINIO}
+      TYPEBOT_BUILDER_DOMINIO: ${TYPEBOT_BUILDER_DOMINIO}
+      TYPEBOT_VIEWER_DOMINIO: ${TYPEBOT_VIEWER_DOMINIO}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  postgres_data:
+  redis_data:
+  evolution_instances:
+  caddy_data:
+  caddy_config:

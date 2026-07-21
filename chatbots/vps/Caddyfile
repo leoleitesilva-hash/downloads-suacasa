@@ -1,0 +1,14 @@
+# HTTPS automático (Let's Encrypt) para os 3 serviços.
+# Os domínios vêm do arquivo .env — não precisa editar aqui.
+
+{$EVOLUTION_DOMINIO} {
+	reverse_proxy evolution-api:8080
+}
+
+{$TYPEBOT_BUILDER_DOMINIO} {
+	reverse_proxy typebot-builder:3000
+}
+
+{$TYPEBOT_VIEWER_DOMINIO} {
+	reverse_proxy typebot-viewer:3000
+}
