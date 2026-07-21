@@ -1,0 +1,125 @@
+{
+  "titulo": "Base de Conhecimento - 10 Maiores Dores do Público de Automação Residencial (Brasil)",
+  "data_pesquisa": "2026-07-21",
+  "fontes": "Supermetrics (YouTube Public Data) + pesquisa web (Google, fóruns, Reclame Aqui)",
+  "resumo_executivo": "Cruzamento de comentários reais do YouTube, sinais do Instagram e termos de busca do Google aponta um 'triângulo de ouro': (1) começar sem errar, (2) elétrica/Wi-Fi brasileiros, (3) segurança. Mercado de automação residencial no Brasil cresce ~30% ao ano; buscas por casa inteligente +22% em 12 meses.",
+  "canais_analisados": [
+    {"nome": "Gui Casa Inteligente", "inscritos": 160000, "videos_analisados": 465, "views": 13911377, "comentarios": 66904, "engajamento_com_por_1k_views": 4.81, "perfil": "Nicho puro de casa inteligente"},
+    {"nome": "Max Dicas", "inscritos": 629000, "videos_analisados": 500, "views": 106465048, "comentarios": 179075, "engajamento_com_por_1k_views": 1.68, "perfil": "Redes/Wi-Fi/informática que entrou em smart home"},
+    {"nome": "Felps", "handle": "@felpstech", "inscritos": 376000, "videos_analisados": 500, "views": 45259645, "comentarios": 82861, "engajamento_com_por_1k_views": 1.83, "perfil": "Setup/gadgets/Alexa"},
+    {"nome": "Legião Tech", "inscritos": 67000, "videos_analisados": "qualitativo", "perfil": "Casa inteligente + consultoria (Henrique Rangel)"}
+  ],
+  "dores": [
+    {
+      "rank": 1,
+      "nome": "Conectividade — dispositivo não conecta ou cai",
+      "como_o_usuario_fala": ["sumiu do app", "aparece offline", "não pareia", "caiu e não volta", "não conecta no Wi-Fi"],
+      "causa_real": "Rede 2.4GHz vs 5GHz, band steering de fábrica nos roteadores brasileiros, roteador de operadora fraco, distância/parede.",
+      "evidencia": "Maior volume absoluto de comentários da amostra. Max Dicas: 'Notebook NÃO CONECTA no Wi-Fi' (12018 comentários), 'Celular NÃO CONECTA no Wi-Fi' (7684); tema rede soma 104 mil comentários. Gui: tema Wi-Fi 6.40 com/1k views.",
+      "resposta_sugerida": "Invista em roteador/mesh bom antes de comprar dispositivos. Separe rede 2.4GHz. Evite roteador de operadora."
+    },
+    {
+      "rank": 2,
+      "nome": "Por onde começo + medo de comprar errado",
+      "como_o_usuario_fala": ["por onde começar", "o que comprar primeiro", "tenho medo de gastar errado", "Alexa ou Google?"],
+      "causa_real": "Excesso de opções (marcas, protocolos, ecossistemas) sem caminho claro.",
+      "evidencia": "Vídeos mais comentados do Gui: 'Como COMEÇAR CORRETAMENTE' (2052 com/818mil views), '8 Dicas do que NÃO FAZER' (1664 com/717mil views). Virou curso/consultoria no Gui e Legião Tech.",
+      "resposta_sugerida": "Defina 1 ecossistema (Alexa é mais forte para automação no BR). Comece com 1 dispositivo (~R$190), configure, use 1 semana, depois expanda."
+    },
+    {
+      "rank": 3,
+      "nome": "Segurança — câmera, NVR, fechadura",
+      "como_o_usuario_fala": ["qual câmera comprar", "vão invadir minha câmera?", "fechadura é segura?", "como monitorar a casa"],
+      "causa_real": "Medo de assalto (driver de compra) + medo de invasão/vazamento (senha de fábrica nunca trocada).",
+      "evidencia": "Vídeo nº1 do Gui em comentários é sobre NVR (2692 com). Tema fechadura/câmera tem maior engajamento do canal (6.96 com/1k views). Google: 'sistema de segurança residencial inteligente' +50% em 12 meses.",
+      "resposta_sugerida": "Trocar senha padrão, ativar verificação em 2 etapas, manter firmware atualizado, considerar NVR para gravação local."
+    },
+    {
+      "rank": 4,
+      "nome": "Interruptor + elétrica brasileira (sem neutro, three-way, 110/220)",
+      "como_o_usuario_fala": ["minha caixinha não tem neutro", "como faço paralelo/three-way", "serve pra 220V?", "fiação antiga"],
+      "causa_real": "Muitas casas não têm fio neutro na caixa do interruptor; retorno invertido em fiação antiga; medo de mexer na elétrica; moradores de aluguel não podem quebrar parede.",
+      "evidencia": "53 vídeos e 13977 comentários no Gui. 'NÃO COMPRE INTERRUPTOR SMART antes de assistir' (1020 com). Interruptor é o produto líder de busca no Google (~1.5 milhão/ano).",
+      "resposta_sugerida": "Existem interruptores sem neutro (com capacitor correto). Para three-way, usar 'paralelo virtual' por automação. Contratar eletricista se não tiver noção."
+    },
+    {
+      "rank": 5,
+      "nome": "Preço / quanto custa / gastando pouco",
+      "como_o_usuario_fala": ["isso é caro?", "quanto custa?", "dá pra fazer barato?", "vale a pena?"],
+      "causa_real": "Percepção de que automação é 'coisa de rico' sem saber que dá para começar por ~R$200.",
+      "evidencia": "2º tema em engajamento no Gui (6.45 com/1k views). Felps: 75 vídeos 'barato/vale a pena' somam 10500 comentários.",
+      "resposta_sugerida": "Dá para começar com R$190-300. Lâmpada que custava R$180 em 2019 hoje sai ~R$45. Investir no próprio ritmo."
+    },
+    {
+      "rank": 6,
+      "nome": "Selva de marcas e apps (Tuya, Sonoff, Zigbee x Wi-Fi, Matter)",
+      "como_o_usuario_fala": ["cada aparelho um app", "Zigbee ou Wi-Fi?", "isso funciona com Alexa?", "o que é Matter?"],
+      "causa_real": "Comprar peças de marcas diferentes que não se integram; confusão entre integração via nuvem e via protocolo local.",
+      "evidencia": "88 vídeos e ~16 mil comentários no Gui. Legião Tech tem short dedicado a 'COMPATIBILIDADE em casa inteligente'.",
+      "resposta_sugerida": "Escolher 1 plataforma central. Preferir dispositivos com selo Matter ou que integrem via Tuya/Smart Life."
+    },
+    {
+      "rank": 7,
+      "nome": "Dominar a Alexa (rotinas, comandos, funções escondidas)",
+      "como_o_usuario_fala": ["como crio rotina", "comando não funciona", "rotina parou de funcionar", "funções que não conheço"],
+      "causa_real": "A pessoa compra o aparelho e não sabe extrair valor; rotina desativada ou dispositivo offline.",
+      "evidencia": "Maior tema do Felps (179 vídeos, 42452 comentários). 'Como LIGAR O COMPUTADOR pela ALEXA' (2692 com). Legião Tech: e-book '20 Rotinas Simples com Alexa'.",
+      "resposta_sugerida": "Verificar se rotina está ativada e dispositivos online. Uma Alexa por cômodo melhora a experiência."
+    },
+    {
+      "rank": 8,
+      "nome": "Dependência de internet/nuvem",
+      "como_o_usuario_fala": ["se a internet cair fico no escuro?", "funciona sem internet?"],
+      "causa_real": "Dispositivos Wi-Fi baratos dependem de servidor externo; empresas podem desligar servidores e matar o produto.",
+      "evidencia": "'FUNCIONA SEM INTERNET! Paralelo com Interruptores Smart' (654 com no Gui). Demanda crescente por hub local/Zigbee.",
+      "resposta_sugerida": "Usar Zigbee com hub local (ou Home Assistant) para não depender da nuvem."
+    },
+    {
+      "rank": 9,
+      "nome": "Falta de inspiração prática (o que automatizar?)",
+      "como_o_usuario_fala": ["tenho os aparelhos mas a casa continua burra", "o que dá pra automatizar", "me dá ideias"],
+      "causa_real": "A pessoa tem os dispositivos mas não sabe montar automações que melhoram o dia a dia.",
+      "evidencia": "Tours e listas são máquinas de engajamento no Felps (44 vídeos, 10348 comentários). '20 AUTOMAÇÕES para se INSPIRAR' (1808 com).",
+      "resposta_sugerida": "Sugerir automações de alto valor: sensor de presença, desligar tudo ao sair, rotina bom-dia/boa-noite, simulação de presença."
+    },
+    {
+      "rank": 10,
+      "nome": "Suporte, garantia e dispositivo crítico que falha",
+      "como_o_usuario_fala": ["comprei no AliExpress e não tem garantia", "fechadura travou e fiquei na rua", "pilha acaba rápido"],
+      "causa_real": "Importado sem assistência no Brasil; fechadura digital que trava/descarrega; marcas sem suporte.",
+      "evidencia": "Fechadura facial do Gui (1137 com). Reclame Aqui: Sonoff Brasil, Elsys, Intelbras com reclamações de suporte.",
+      "resposta_sugerida": "Comprar de revendedor com garantia para dispositivos críticos (fechadura). Ter plano B (bateria 9V de emergência, chave física)."
+    }
+  ],
+  "angulo_bonus": {
+    "nome": "Consumo de energia",
+    "como_o_usuario_fala": "minha casa inteligente vai aumentar a conta de luz?",
+    "fonte": "Legião Tech - vídeo 'Casa inteligente está gastando sua energia?'",
+    "resposta_sugerida": "Consumo em standby dos dispositivos é baixo; automações de desligamento tendem a economizar mais do que gastam."
+  },
+  "instagram": {
+    "perfil_dedicado": "@guicasainteligente (~32 mil seguidores)",
+    "observacao": "Dores em formato topo de funil / decisão de compra imediata: quanto custa, onde compra, funciona sem internet, precisa de neutro, precisa de obra, funciona com Alexa, qual marca é boa, ceticismo (é gambiarra).",
+    "dores_concentradas": [1, 3, 5, 6],
+    "pendente": "Dados quantitativos reais do Instagram dependem de autenticar a fonte Instagram Public Data no Supermetrics."
+  },
+  "termos_google": [
+    {"termo": "Interruptor inteligente", "sinal": "Líder: ~1.5 milhão de buscas/ano"},
+    {"termo": "Fechadura digital", "sinal": "~63 mil buscas/ano"},
+    {"termo": "Câmera inteligente", "sinal": "~45 mil buscas/ano"},
+    {"termo": "Sistema de segurança residencial inteligente", "sinal": "+50% em 12 meses (maior crescimento)"},
+    {"termo": "Geladeira/cortina/vaso sanitário inteligente", "sinal": ">30 mil buscas cada (cauda emergente)"},
+    {"termo": "Casa inteligente (geral)", "sinal": "+22% em 12 meses"}
+  ],
+  "fontes_principais": [
+    "https://www.youtube.com/c/GuiCasaInteligente",
+    "https://legiaotech.com.br/projeto-sua-casa-inteligente/",
+    "https://www.youtube.com/@Felpstech",
+    "https://homeassistantbrasil.com.br/t/interruptor-inteligente-sem-neutro/11743",
+    "https://br.amazonforum.com/s/question/0D56Q0000BnblQ2SQI/alexa-n%C3%A3o-atende-as-rotinas",
+    "https://www.reclameaqui.com.br/empresa/sonoff-brasil/",
+    "https://www.cnnbrasil.com.br/tecnologia/buscas-por-casa-inteligente-crescem-22-no-brasil-diz-levantamento/",
+    "https://oantagonista.com.br/ladooa/tecnologia/casa-inteligente-demais-pode-virar-problema-quando-a-internet-cai-e-nada-funciona-no-manual/",
+    "https://www.techtudo.com.br/listas/2026/07/5-erros-comuns-de-quem-esta-montando-uma-casa-inteligente-e-como-evita-los-edinfoeletro.ghtml"
+  ]
+}
